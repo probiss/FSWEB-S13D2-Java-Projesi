@@ -2,10 +2,8 @@ package MissionsDay2;
 
 public class Mission1 {
     public static boolean isPalindrome(int num){
-        if( num < 0 ){
-            return false;
-        }
 
+        num = Math.abs(num);
         int normalNum = num;
         int reverse = 0;
 
@@ -18,7 +16,7 @@ public class Mission1 {
     }
 
     public static void main(String[] args) {
-        System.out.println(isPalindrome(55000055));
+        System.out.println(isPalindrome(-55000055));
     }
 
     //StringBuilder'ın reverse() metodu sayesinde orijinal metni
